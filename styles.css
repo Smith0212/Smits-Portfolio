@@ -307,7 +307,7 @@ header.sticky {
     }
 }
 
-@media (max-width: 458px) {
+@media (max-width: 500px) {
 
     .home {
         height: 100vh;
