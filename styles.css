@@ -307,7 +307,7 @@ header.sticky {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 
     .home {
         height: 100vh;
@@ -319,7 +319,7 @@ header.sticky {
         content: "";
         position: absolute;
         top: 8%;
-        left: -20%;
+        left: -15%;
         width: 120%;
         height: 100%;
         background-image: url(../1_smit-removebg.png);
@@ -486,6 +486,7 @@ header.sticky {
 }
 
 .skills_item {
+    width: 150px;
     font-weight: 400;
     font-size: 22px;
     color: var(--text-color);
@@ -504,22 +505,22 @@ header.sticky {
 
 .skills_item:nth-child(1)::before {
     left: -20px;
-    top: 8px;
+    top: 6px;
 }
 
 .skills_item:nth-child(2)::before {
     left: -20px;
-    top: 64px
+    top: 62px
 }
 
 .skills_item:nth-child(3)::before {
     left: -20px;
-    top: calc(64px + 56px*1);
+    top: calc(62px + 56px*1);
 }
 
 .skills_item:nth-child(4)::before {
     left: -20px;
-    top: calc(64px + 56px*2);
+    top: calc(62px + 56px*2);
 }
 
 .skills_item:hover {
@@ -553,7 +554,7 @@ header.sticky {
 
     .skills_content {
         grid-template-columns: 1fr 1fr;
-        column-gap: 5rem;
+        column-gap: 2.5rem;
         row-gap: 2.5rem;
         justify-content: center;
         align-items: center;
@@ -583,15 +584,15 @@ header.sticky {
 
     /* Adjust specific pseudo-elements for mobile */
     .skills_item:nth-child(2)::before {
-        top: 91px;
+        top: 89px;
     }
 
     .skills_item:nth-child(3)::before {
-        top: calc(92px + 55px);
+        top: calc(89px + 55px);
     }
 
     .skills_item:nth-child(4)::before {
-        top: calc(92px + 111px);
+        top: calc(89px + 111px);
     }
 
     .forMobile {
