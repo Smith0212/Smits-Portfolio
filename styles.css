@@ -324,7 +324,7 @@ header.sticky {
         content: "";
         position: absolute;
         top: 8%;
-        left: -20%;
+        left: -21%;
         width: 120%;
         height: 100%;
         background-image: url(../1_smit-removebg.png);
@@ -491,7 +491,7 @@ header.sticky {
 }
 
 .skills_item {
-    width: 150px;
+    width: 160px;
     font-weight: 400;
     font-size: 22px;
     color: var(--text-color);
