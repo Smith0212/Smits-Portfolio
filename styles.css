@@ -491,7 +491,6 @@ header.sticky {
 }
 
 .skills_item {
-    width: 160px;
     font-weight: 400;
     font-size: 22px;
     color: var(--text-color);
@@ -570,6 +569,10 @@ header.sticky {
         row-gap: 1.8rem;
         align-items: center;
         left: 40px;
+    }
+
+    .skills_item {
+        width: 160px;
     }
 
     .skills_item::before {
