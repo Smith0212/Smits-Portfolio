@@ -6,9 +6,7 @@ This project is a responsive portfolio website developed by Smit Sutariya. It is
 - **Scroll Animations:** Includes animations while scrolling to enhance user experience.
 - **Smooth Scrolling:** Provides a smooth scrolling experience to navigate through different sections.
 - **Dark Theme:** Offers a beautiful dark theme for the website.
-- **Customizable Colors:** Allows customization of the project colors.
 - **Contact Section:** Includes a contact section with the functionality to send emails.
-- **Mobile-First Development:** Initially developed for mobile devices and extended for desktop compatibility.
 - **Cross-Device Compatibility:** Compatible with all mobile devices, providing a pleasant and intuitive user interface.
 
 ## How to Use
