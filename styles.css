@@ -169,11 +169,12 @@ header.sticky {
 
 #name {
     color: var(--text-color);
-    font-family: 'Oswald', sans -serif;
+    font-family: 'Oswald', 'sans -serif';
     font-weight: 600;
 }
 
 .home-text h3 {
+    font-family: 'Oswald', 'sans -serif';
     padding-top: 85px;
     font-size: 22px;
     font-weight: 500;
