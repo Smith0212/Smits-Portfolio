@@ -411,9 +411,10 @@ header.sticky {
 }
 
 .about-text p {
+    text-align: justify;
     margin: 25px 0 40px;
     width: 100%;
-    max-width: 550px;
+    /* max-width: 550px; */
     font-size: var(--p-font);
     font-weight: 400;
     Line-height: 35px;
@@ -891,8 +892,7 @@ footer {
     }
 
     .about-text {
-        justify-content: center;
-        align-items: center;
+        align-items: justify;
         text-align: center;
     }
 
@@ -948,6 +948,11 @@ footer {
     :root {
         --hl-font: 3.5rem;
         --h2-font: 2.7rem;
+    }
+
+    .about-text {
+        align-items: justify;
+        text-align: center;
     }
 
     .home {
