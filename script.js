@@ -19,7 +19,7 @@ window.onscroll = () => {
 // Type JS
 document.addEventListener('DOMContentLoaded', function() {
     const typed = new Typed('.multiple-text', {
-        strings: ["Web Developer!", "Web Scraper!", "Python Programmer!!"],
+        strings: ["Web Developer!", "Python Programmer!!", "Web Scraper!"],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
@@ -52,7 +52,7 @@ const sendEmail = (e) =>{
     emailjs.sendForm('service_rujmvlk','template_0v7dudm',"#contact-form",'qtRH3dBS67TzrxnS-')
     .then(() => {
         contactMessage.textContent='✅ Message sent successfully'
-        //rremove the message after 5 seconds
+        //remove the message after 5 seconds
         setTimeout(() => {
             contactMessage.textContent=''
         },5000)
@@ -68,13 +68,10 @@ contactForm.addEventListener('submit', sendEmail)
 
 
 function validateForm() {
-    // Get the email input element
     var emailInput = document.forms["contact-form"]["email"];
 
-    // Get the value of the email input
     var email = emailInput.value;
 
-    // Regular expression for email validation
     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     // Check if the email is valid
