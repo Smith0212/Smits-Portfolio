@@ -1,6 +1,6 @@
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {
-    header.classList.toggle("sticky", window.scrollY > 130);
+    header.classList.toggle("sticky", window.scrollY > 130);  // When the user scrolls, it toggles a CSS class called "sticky" on the header element
 });
 
 let menu = document.querySelector("#menu-icon");
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),
-        contactMessage = document.getElementById('text')
+      contactMessage = document.getElementById('text')
 const sendEmail = (e) =>{
     e.preventDefault()
     //service id, template id, template params
