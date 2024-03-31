@@ -342,7 +342,7 @@ header.sticky {
     .home-text h1 {
         max-width: 300px;
         margin-top: 20px;
-        font-size: 42px;
+        font-size: 36px;
         letter-spacing: 1.3px;
     }
 
@@ -350,7 +350,7 @@ header.sticky {
         color: var(--main-color);
         font-family: 'Oswald', sans -serif;
         font-weight: 600;
-        font-size: 46px;
+        font-size: 38px;
     }
 
     .home-text h3 {
@@ -585,7 +585,7 @@ header.sticky {
 
 }
 
-@media (max-width: 594px) {
+@media (max-width: 394px) {
     .skills_item::before {
         position: absolute;
         left: -40px;
@@ -594,20 +594,57 @@ header.sticky {
 
     /* Adjust specific pseudo-elements for mobile */
     .skills_item:nth-child(2)::before {
-        top: 89px;
+        top: 86px;
     }
 
     .skills_item:nth-child(3)::before {
-        top: calc(89px + 55px);
+        top: calc(86px + 55px);
     }
 
     .skills_item:nth-child(4)::before {
-        top: calc(89px + 111px);
+        top: calc(86px + 111px);
     }
 
     .forMobile {
         max-width: 160px;
     }
+
+    .skills_container {
+        grid-template-columns: 1fr;
+        gap: 2rem; 
+        row-gap: 1.5rem; 
+        padding-bottom: 1rem;
+    }
+
+    .skills_data {
+        text-align: center;
+        margin-top: 0;
+        padding-top: 8%; 
+    }
+
+    .skills_subtitle {
+        font-size: 28px; 
+        margin-top: -30px; 
+    }
+
+    .skills_content {
+        grid-template-columns: 1fr; 
+        gap: 2rem; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills_group {
+        position: relative;
+        row-gap: 1.8rem;
+        align-items: center;
+        left: 40px;
+    }
+
+    .skills_item {
+        width: 140px; 
+    }
+
 }
 
 
@@ -729,6 +766,23 @@ header.sticky {
 .projects_button i {
     font-size: 1.25rem;
 }
+
+@media (max-width: 594px) {
+    .projects_card {
+        padding: 110px 10px; 
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 20px; 
+        box-shadow: 0 0 8px rgba(54, 77, 208, 0.9); 
+    }
+
+    .projects_title {
+        font-size: 24px; /* Reduced font size for smaller screens */
+    }
+}
+
+
+
 
 
 
