@@ -511,22 +511,22 @@ header.sticky {
 
 .skills_item:nth-child(1)::before {
     left: -20px;
-    top: 6px;
+    top: 7px;
 }
 
 .skills_item:nth-child(2)::before {
     left: -20px;
-    top: 62px
+    top: 61px
 }
 
 .skills_item:nth-child(3)::before {
     left: -20px;
-    top: calc(62px + 56px*1);
+    top: calc(60px + 56px*1);
 }
 
 .skills_item:nth-child(4)::before {
     left: -20px;
-    top: calc(62px + 56px*2);
+    top: calc(60px + 56px*2);
 }
 
 .skills_item:hover {
