@@ -27,7 +27,7 @@
 body {
     background: var(--bg-color);
     color: var(--text-color);
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     width: 100%;
 }
 
@@ -54,6 +54,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background: transparent;
+    overflow-x: hidden;
 }
 
 .logo span {
@@ -121,98 +122,7 @@ header.sticky {
 }
 
 
-
-
-
-
-
-
-
-
-/* =============================HOME========================== */
-
-.home {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
-
-.home::before {
-    content: "";
-    position: absolute;
-    top: 5%;
-    left: 30%;
-    width: 90%;
-    height: 100%;
-    background-image: url(../1_smit-removebg.png);
-    background-size: cover;
-    background-position: left center;
-}
-
-.home-text h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: var(--h1-font);
-    font-weight: 600;
-    Line-height: 1.2;
-    margin: 15px 0 25px;
-}
-
-.multiple-text {
-    font-family: 'Oswald', sans-serif;
-    font-size: var(--h1-font);
-    font-weight: 600;
-    Line-height: 1.2;
-    margin: 15px 0 25px;
-    color: var(--main-color)
-}
-
-#name {
-    color: var(--text-color);
-    font-family: 'Oswald', 'sans -serif';
-    font-weight: 600;
-}
-
-.home-text h3 {
-    font-family: 'Oswald', 'sans -serif';
-    padding-top: 85px;
-    font-size: 22px;
-    font-weight: 500;
-}
-
-.home-text p {
-    margin: 40px 0 40px;
-    width: 80%;
-    max-width: 550px;
-    font-size: var(--p-font);
-    font-weight: 400;
-    Line-height: 20px;
-    color: var(--second-color);
-}
-
-.home__image {
-    justify-self: center;
-}
-
-.home__blob {
-    position: relative;
-    width: 320px;
-    fill: var(--first-color);
-    filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
-    align-items: center;
-}
-
-.home__img {
-    position: absolute;
-    width: 600px;
-    height: 900px;
-    margin: auto;
-}
-
-.home__image:hover {
-    transform: scale(1.1) translateY(-10px) !important;
-}
-
+/* Button Globel */
 .btn {
     display: inline-block;
     padding: 15px 25px;
@@ -233,144 +143,180 @@ header.sticky {
 
 
 
-/* Mobile responsive styles */
 
-@media (max-width: 768px) {
+
+
+/* =============================HOME========================== */
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+.home-text {
+    flex-basis: 60%;
+    padding-right: 20px;
+    max-width: 60%;
+    padding: 3rem;
+    padding-left: 7rem;
+}
+
+.home-text h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: var(--h1-font);
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 15px 0 25px;
+}
+
+.multiple-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: var(--h1-font);
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 15px 0 25px;
+    color: var(--main-color);
+}
+
+#name {
+    color: var(--text-color);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+.home-text h3 {
+    font-family: 'Oswald', sans-serif;
+    padding-top: 85px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.home-text p {
+    margin: 40px 0 40px;
+    max-width: 50%;
+    font-size: var(--p-font);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--second-color);
+}
+
+.image {
+    flex-basis: 40%;
+    text-align: right;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-right: 7rem;
+}
+
+/* =======================Responsive Styles===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
     .home {
-        background-position: center;
-        align-items: center;
-        justify-content: center;
-        padding: 60px 10px;
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px;
     }
 
     .home-text {
-        margin-left: 5px;
+        padding: 1rem 2rem;
+        max-width: 90%;
     }
 
     .home-text h1 {
         font-size: 48px;
-        /* letter-spacing: 2px; */
-        margin: 30px 0 30px;
-    }
-
-    .home-text h1 span {
-        font-size: 52px;
-    }
-
-    .home-text h3 {
-        padding-top: -50px;
     }
 
     .home-text p {
-        margin: 25px 0;
-        width: 30%;
-        font-size: 16px;
-        line-height: 1.4;
+        font-size: 18px;
     }
 
-    .home {
-        position: relative;
-        height: 100vh;
-        width: 100%;
-        overflow: hidden;
+    .image {
+        margin-top: 30px;
+        max-width: 90%;
+        padding-right: 0;
     }
 
-    .home::before {
-        content: "";
-        position: absolute;
-        top: 5%;
-        left: -10%;
-        width: 120%;
-        height: 100%;
-        background-image: url(../1_smit-removebg.png);
-        background-size: cover;
-        background-position: left center;
-    }
-
-    .home__image {
-        justify-self: center;
-    }
-
-    .home__blob {
-        width: 100%;
-        fill: var(--first-color);
-        filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
-    }
-
-    .right-nav {
-        margin-right: 25px;
-    }
-
-    .btn {
-        font-size: 14px;
-        padding: 12px 20px;
-        margin: 10px -1px;
-    }
-
-    html {
-        width: 100vw;
-        overflow-x: hidden;
+    .image img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
-@media (max-width: 550px) {
-
-    .home {
-        height: 100vh;
-        width: 365px;
-        overflow: hidden;
-    }
-
-    .home::before {
-        content: "";
-        position: absolute;
-        top: 8%;
-        left: -21%;
-        width: 120%;
-        height: 100%;
-        background-image: url(../1_smit-removebg.png);
-        background-size: cover;
-        background-position: left center;
-        /* overflow: hidden; */
-    }
-
-    html {
-        width: 100vw;
-        overflow-x: hidden;
+/* Mobile Phones */
+@media (max-width: 768px) {
+    .home-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .home-text h1 {
-        max-width: 300px;
-        margin-top: 20px;
-        font-size: 36px;
-        letter-spacing: 1.3px;
-    }
-
-    .home-text h1 span {
-        color: var(--main-color);
-        font-family: 'Oswald', sans -serif;
-        font-weight: 600;
-        font-size: 38px;
-    }
-
-    .home-text h3 {
-        padding-top: 85px;
-        font-size: 20px;
-        font-weight: 500;
-        /* max-width: fit-content; */
+        font-size: 32px;
     }
 
     .home-text p {
-        margin: 40px 0 40px;
-        width: 33%;
+        font-size: 16px;
+    }
+
+    .image img {
+        padding-right: 0;
     }
 }
 
+/* Smaller Mobile Devices */
+@media (max-width: 480px) {
+    .home {
+        flex-direction: column-reverse;
+        padding: 10px;
+        height: auto;
+    }
 
+    .home-text h1 {
+        font-size: 28px;
+    }
 
+    .home-text h3 {
+        padding-top: 0px;
+    }
 
+    .home-text p {
+        font-size: 14px;
+        max-width: 100%;
+    }
 
+    .multiple-text {
+        font-size: 1.3em;
+    }
 
+    .image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .home-text .btn {
+        padding: 12px 20px;
+        margin: 0;
+    }
+}
 
 
 
@@ -421,6 +367,29 @@ header.sticky {
     color: var(--second-color);
 }
 
+.about__image {
+    justify-self: center;
+}
+
+.about__blob {
+    position: relative;
+    width: 320px;
+    fill: var(--first-color);
+    filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
+    align-items: center;
+}
+
+.about__img {
+    position: absolute;
+    width: 600px;
+    height: 900px;
+    margin: auto;
+}
+
+.about__image:hover {
+    transform: scale(1.1) translateY(-10px) !important;
+}
+
 
 
 
@@ -434,6 +403,7 @@ header.sticky {
 
 .skills_section {
     width: 100%;
+    overflow-x: hidden;
 }
 
 .skills_title h3 {
@@ -496,41 +466,90 @@ header.sticky {
     font-weight: 400;
     font-size: 22px;
     color: var(--text-color);
+    display: flex;
+    align-items: center;
 }
 
-.skills_item::before {
-    content: '';
-    position: absolute;
-    left: -20px;
-    top: 8px;
-    width: 12px;
-    height: 12px;
+.skills_item .dot {
+    width: 11px;
+    height: 11px;
+    background-color: var(--main-color); /* Blue color as shown in image */
     border-radius: 50%;
-    background-color: var(--main-color);
-}
-
-.skills_item:nth-child(1)::before {
-    left: -20px;
-    top: 7px;
-}
-
-.skills_item:nth-child(2)::before {
-    left: -20px;
-    top: 61px
-}
-
-.skills_item:nth-child(3)::before {
-    left: -20px;
-    top: calc(60px + 56px*1);
-}
-
-.skills_item:nth-child(4)::before {
-    left: -20px;
-    top: calc(60px + 56px*2);
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .skills_item:hover {
     color: var(--main-color);
+}
+
+/* ===================== Responsive Design ===================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .skills_container {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .skills_subtitle {
+        font-size: 40px;
+    }
+
+    .skills_description {
+        font-size: 18px;
+    }
+
+    .skills_content {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills_item {
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 550px) {
+    .skills_title h3 {
+        font-size: 28px;
+    }
+
+    .skills_subtitle {
+        font-size: 30px;
+    }
+
+    .skills_description {
+        font-size: 14px;
+    }
+
+    .skills_item {
+        font-size: 16px;
+    }
+
+    .skills_item .dot {
+        width: 8px;
+        height: 8px;
+        margin-right: 8px;
+    }
+
+    .skills_container {
+        padding: 1rem;
+    }
+
+    .skills_content {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills_group {
+        row-gap: 1.5rem;
+    }
 }
 
 
@@ -671,6 +690,7 @@ header.sticky {
 
 .projects_section {
     background-color: var(--second-bg-color);
+    overflow-x: hidden;
 }
 
 .title {
@@ -941,9 +961,9 @@ footer {
 }
 
 @media (max-width: 1170px) {
-    .home {
+    /* .home {
         height: 90vh;
-    }
+    } */
 
     :root {
         --hl-font: 4.5rem;
@@ -1020,10 +1040,10 @@ footer {
         text-align: center;
     }
 
-    .home {
+    /* .home {
         overflow-x: hidden;
         width: max-content
-    }
+    } */
 
     body {
         overflow-x: hidden;
