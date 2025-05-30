@@ -691,6 +691,7 @@ header.sticky {
 .projects_section {
     background-color: var(--second-bg-color);
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .title {
